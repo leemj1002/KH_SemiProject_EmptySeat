@@ -1,0 +1,87 @@
+#mainLogo{
+    position: absolute;
+    left:200px;
+    top:50px;
+    z-index: 100;
+    cursor: pointer;
+}
+#transLogo{
+    position: absolute;
+    left:200px;
+    top:50px;
+    z-index: 50;
+    cursor: pointer;
+}
+.hover:hover{
+    visibility: hidden;
+    cursor: pointer;
+    transform: 2s;
+}
+
+
+#popMenu{
+    position: absolute;
+    right:850px;
+    top:80px;
+    cursor: pointer;
+}
+
+
+#menubar>p{
+    position: relative;
+    top: 60px;
+    margin: 25px;
+    font-size: 15px;
+    display: inline-block;
+    cursor: pointer;
+}
+#searchBox{
+    position: relative;
+    padding: 10px;
+    left: 15px;
+    top: 500px;
+    width: 600px;
+    text-align: center;
+    border: solid 3px rgb(94, 100, 177);
+    z-index: 150;
+    box-shadow: 5px 5px 10px lightgray;
+    outline: none;
+    
+}
+#searchBox+button {
+    position: relative;
+    top: 500px;
+    right: 40px;
+    width: 50px;
+    height: 40px;
+    border: 0px;
+    background-color: rgb(94, 100, 177);
+    outline: none;
+    color: #ffffff;
+    z-index: 150;
+    cursor: pointer;
+}
+
+#middle{
+    position: relative;
+    top: 30px;
+    right: 0px;
+    left: 0px;
+    background-color: rgb(94, 100, 177);
+}
+#middleText{
+    position: absolute;
+    top: -5px;
+    left: 195px;
+    color: white;
+}
+
+#moniter{
+    position: relative;
+    width: 100%;
+    z-index: 100;
+}
+
+body{
+    width: 1366px;
+}
