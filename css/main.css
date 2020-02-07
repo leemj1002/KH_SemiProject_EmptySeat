@@ -1,15 +1,15 @@
 #mainLogo{
     position: absolute;
-    left:200px;
-    top:50px;
-    z-index: 100;
+    left:100px;
+    top:20px;
+    z-index: 3;
     cursor: pointer;
 }
 #transLogo{
     position: absolute;
-    left:200px;
-    top:50px;
-    z-index: 50;
+    left:100px;
+    top:20px;
+    z-index: 1;
     cursor: pointer;
 }
 .hover:hover{
@@ -21,7 +21,7 @@
 
 #popMenu{
     position: absolute;
-    right:850px;
+    right:200px;
     top:80px;
     cursor: pointer;
 }
@@ -37,29 +37,9 @@
 }
 #searchBox{
     position: relative;
-    padding: 10px;
-    left: 15px;
-    top: 500px;
+    top: 400px;
     width: 600px;
     text-align: center;
-    border: solid 3px rgb(94, 100, 177);
-    z-index: 150;
-    box-shadow: 5px 5px 10px lightgray;
-    outline: none;
-    
-}
-#searchBox+button {
-    position: relative;
-    top: 500px;
-    right: 40px;
-    width: 50px;
-    height: 40px;
-    border: 0px;
-    background-color: rgb(94, 100, 177);
-    outline: none;
-    color: #ffffff;
-    z-index: 150;
-    cursor: pointer;
 }
 
 #middle{
@@ -79,9 +59,69 @@
 #moniter{
     position: relative;
     width: 100%;
-    z-index: 100;
 }
 
-body{
-    width: 1366px;
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 15%;
+}
+
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+
+.close:hover .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+#login {
+    width: 200px;
+    margin: 100px auto;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+
+#login input,
+#login label {
+    display: block;
+    font-family: 'Jim Nightshade', cursive;
+    font-size: 20px;
+}
+
+
+#login-form label {
+    margin-top: 10px;
+}
+
+
+#login-form input {
+    margin-top: 5px;
 }
