@@ -1,0 +1,58 @@
+#mainLogo{
+    position: absolute;
+    left:100px;
+    top:20px;
+    z-index: 3;
+    cursor: pointer;
+}
+#transLogo{
+    position: absolute;
+    left:100px;
+    top:20px;
+    z-index: 1;
+    cursor: pointer;
+}
+.hover:hover{
+    visibility: hidden;
+    cursor: pointer;
+    transform: 2s;
+}
+
+
+#popMenu{
+    position: absolute;
+    right:200px;
+    top:80px;
+    cursor: pointer;
+}
+
+
+#menubar>p{
+    position: relative;
+    top: 60px;
+    margin: 25px;
+    font-size: 15px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#middle{
+    position: relative;
+    top: 30px;
+    right: 0px;
+    left: 0px;
+    background-color: rgb(94, 100, 177);
+}
+#middleText{
+    position: absolute;
+    top: -5px;
+    left: 195px;
+    color: white;
+}
+
+body{
+    width: 1366px;
+}
+
+
+
