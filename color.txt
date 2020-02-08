@@ -1,2 +1,4 @@
-main - 5e64b1
-sub - ff7531
+main - #5e64b1
+sub - #ff7531
+
+브랜치를 바꿔서?
