@@ -129,3 +129,30 @@
 #login-form input {
     margin-top: 5px;
 }
+
+#searchBox{
+    position: relative;
+    padding: 10px;
+    left: 35px;
+    top: 500px;
+    width: 600px;
+    text-align: center;
+    border: solid 3px rgb(94, 100, 177);
+    z-index: 150;
+    box-shadow: 5px 5px 10px lightgray;
+    outline: none;
+    
+}
+#searchBox+button {
+    position: relative;
+    top: 500px;
+    right: 20px;
+    width: 50px;
+    height: 40px;
+    border: 0px;
+    background-color: rgb(94, 100, 177);
+    outline: none;
+    color: #ffffff;
+    z-index: 150;
+    cursor: pointer;
+}

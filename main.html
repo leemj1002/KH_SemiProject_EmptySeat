@@ -11,6 +11,7 @@
     <script>
         onchange
     </script>
+    <script type="text/javascript" src="js/main.js"></script>
     <style>
         body{
             width: 1366px;
@@ -74,7 +75,8 @@
         <center>
             <!-- 검색창 -->
             <div id="searchBoxGra">
-                <input id="searchBox" type="text" name="searchBox" placeholder="빈시트 검색">
+                <input id="searchBox" type="text" name="searchBox" placeholder="빈시트 검색" onchange="change()">
+                <button onclick="searchClick()">검색</button>
             </div>
         </center>
         <!-- 미들 바 -->
