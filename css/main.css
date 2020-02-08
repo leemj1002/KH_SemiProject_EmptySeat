@@ -1,3 +1,7 @@
+body{
+    width: 1366px;
+}
+
 #mainLogo{
     position: absolute;
     left:100px;
@@ -35,18 +39,13 @@
     display: inline-block;
     cursor: pointer;
 }
-#searchBox{
-    position: relative;
-    top: 400px;
-    width: 600px;
-    text-align: center;
-}
 
 #middle{
     position: relative;
-    top: 30px;
+    top: 45px;
     right: 0px;
     left: 0px;
+    z-index: 5;
     background-color: rgb(94, 100, 177);
 }
 #middleText{

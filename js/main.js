@@ -1,11 +1,17 @@
 // 검색창
 function change() {
-    console.log(document.getElementById("searchBox").value);
-    return document.getElementById("searchBox").value;
+    let searchValue = document.getElementById("searchBox").value;
+    if (searchValue !== "") {
+        console.log(searchValue);
+        return searchValue;
+    }
 }
 function searchClick() {
-    console.log(document.getElementById("searchBox").value);
-    return document.getElementById("searchBox").value;
+    let searchValue = document.getElementById("searchBox").value;
+    if (searchValue !== "") {
+        console.log(searchValue);
+        return searchValue;
+    }
 }
 
 
@@ -24,4 +30,17 @@ window.onclick = function () {
     if (event.target == modal) {
         modal.style.display = "none";
     }
+}
+
+// 메인로고 바뀌게
+var transLogo = document.getElementById("transLogo");
+var mainLogo = document.getElementById("mainLogo");
+
+transLogo.addEventListener("mouseover", trans);
+function trans() { //바뀜
+    mainLogo.setAttribute("src", "image/빈시트500-1.png");
+}
+transLogo.addEventListener("mouseleave", leave);
+function leave() { //돌아옴
+    mainLogo.setAttribute("src", "image/빈시트500-2.png");
 }
