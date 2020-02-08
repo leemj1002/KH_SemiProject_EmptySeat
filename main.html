@@ -7,14 +7,20 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>빈시트-pc방 자리찾기</title>
     <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Jim+Nightshade&display=swap" rel="stylesheet">
     <script>
         onchange
     </script>
+    <style>
+        body{
+            width: 1366px;
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <div>
+        <div id="transLogo">
             <!--로고 변하게 하기 -->
             <img id="mainLogo" class="hover" src="image/빈시트500-2.png" width="150px"> <!-- 원래 로고 -->
             <img id="transLogo" src="image/빈시트500-1.png" width="150px">
@@ -32,14 +38,43 @@
             </center>
         </nav>
         <img id="popMenu" class="click" src="image/popMenu500.png" width="30px">
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <form id="login" method="POST">
+                    <label class="log">ID</label>
+                    <input name="userid" type="text">
+                    <label class="log">PASSWORD</label>
+                    <input name="passwprd" type="password">
+                    <input style="margin: 10px;" type="button" value="login">
+                </form>
+            </div>
+        </div>
+        <script>
+            var modal = document.getElementById("myModal");
+            var btn = document.getElementById("popMenu");
+            var span = document.getElementsByClassName("close")[0];
+    
+            btn.onclick = function () {
+                modal.style.display = "block";
+            }
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+            window.onclick = function () {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+    
+        </script>
     </header>
 
     <body>
         <center>
             <!-- 검색창 -->
             <div id="searchBoxGra">
-                <input id="searchBox" type="text" name="searchBox" placeholder="빈시트 검색" onchange="change()">
-                <button onclick="searchClick()">검색</button>
+                <input id="searchBox" type="text" name="searchBox" placeholder="빈시트 검색">
             </div>
         </center>
         <!-- 미들 바 -->
@@ -51,18 +86,22 @@
             <br>
             <img id="moniter" src="image/mian-moniter.png" alt="">
         </div>
+    </div>
+    <script>
+        // 메인로고 바뀌게
+        var transLogo=document.getElementById("transLogo");
+        var mainLogo=document.getElementById("mainLogo");
 
-        <script>
-            function change() {
-                console.log(document.getElementById("searchBox").value);
-                return document.getElementById("searchBox").value;
-            }
-            function searchClick() {
-                console.log(document.getElementById("searchBox").value);
-                return document.getElementById("searchBox").value;
-            }
-        </script>
-    </body>
+        transLogo.addEventListener("mouseover",trans);
+        function trans(){ //바뀜
+            mainLogo.setAttribute("src","image/빈시트500-1.png");
+        }
+        transLogo.addEventListener("mouseleave",leave);
+        function leave(){ //돌아옴
+            mainLogo.setAttribute("src","image/빈시트500-2.png");
+        }
+        
+    </script>
 </body>
 
 </html>
