@@ -39,6 +39,12 @@ body{
     display: inline-block;
     cursor: pointer;
 }
+#searchBox{
+    position: relative;
+    top: 400px;
+    width: 600px;
+    text-align: center;
+}
 
 #middle{
     position: relative;
@@ -48,6 +54,7 @@ body{
     z-index: 5;
     background-color: rgb(94, 100, 177);
 }
+
 #middleText{
     position: absolute;
     top: -5px;
