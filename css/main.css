@@ -133,7 +133,7 @@ body{
     position: relative;
     padding: 10px;
     left: 35px;
-    top: 500px;
+    top: 450px;
     width: 600px;
     text-align: center;
     border: solid 3px rgb(94, 100, 177);
@@ -144,7 +144,7 @@ body{
 }
 #searchBox+button {
     position: relative;
-    top: 500px;
+    top: 450px;
     right: 20px;
     width: 50px;
     height: 40px;
